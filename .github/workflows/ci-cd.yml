@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Run tests
-        run: 
+        run: |
           docker build -t test-app .
           docker run --rm test-app npm test
 
@@ -32,4 +32,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: your-dockerhub-username/myapp:latest
+          tags: divyanshsharma31/myapp:latest
