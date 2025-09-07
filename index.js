@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World! CI/CD with Docker & GitHub Actions ");
+  res.send("Hello World! CI/CD with Docker & GitHub Actions as my DevOps project ");
 });
 
 app.listen(PORT, () => {
