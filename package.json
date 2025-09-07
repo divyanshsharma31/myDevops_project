@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "npx jest"
   },
-  "keywords": [],
+  "keywords ": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
