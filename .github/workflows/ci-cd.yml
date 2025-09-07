@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npx --yes jest
+        run: npm test
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
