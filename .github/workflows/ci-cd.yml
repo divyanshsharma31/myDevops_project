@@ -14,7 +14,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 👇 Add these two steps here
       - name: Install dependencies
         run: npm install
 
@@ -34,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: your-dockerhub-username/myapp:latest
+          tags: divyansh720/myapp:latest
