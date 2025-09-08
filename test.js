@@ -1,3 +1,8 @@
-test("Sample Test", () => {
-  expect(2 + 2).toBe(4);
+const request = require("supertest");
+const app = require("./index");
+
+test("GET / should return Hello DevOps!", async () => {
+  const res = await request(app).get("/");
+  expect(res.statusCode).toBe(200);
+  expect(res.text).toBe("Hello DevOps!");
 });
